@@ -1,0 +1,24 @@
+1 pdw
+   2 Is
+   3 ls
+   4 ls -a
+   5 ls-a
+   6 ls -a
+   7 mkdir module_git
+   8 cd module_git
+   9 pwd
+  10 cd ..
+  11 cd module_git
+  12 touch main.py
+  13 New-Item main.py
+  14 cd module_git
+  15 mkdir src
+  16 mkdir tests
+  17 mkdir books
+  18 mkdir config
+  19 New-Item src/main.py
+  20 New-Item src/library.py
+  21 New-Item tests/test_pre_commit.py
+  22 New-Item books/books.json
+  23 New-Item config/settings.json
+  24 ls -Recurse
