@@ -10,7 +10,10 @@
 # text = input("Введіть рядок: ")
 # symbol = input("Введіть символ: ")
 #
-# count = text.count(symbol)
+# count = 0
+# for letter in text:
+#     if letter == symbol:
+#         count += 1
 #
 # print(f"символ {symbol} зустрічається {count} разів")
 
@@ -21,17 +24,69 @@
 # ● чи є там слово python
 # ● кількість шиплячих літер – szh
 
-text = input("введіть рядок: ")
-print("кількість символів:", len(text))
+# text = input("введіть рядок: ")
+# print("кількість символів:", len(text))
+#
+# if "python" in text:
+#     print("слово python є в рядку")
+# else:
+#     print("слова python немає в рядку")
+#
+# count = 0
+# for letter in text:
+#     if letter in "szh":
+#         count += 1
+#
+# print(f"кількість шиплячих літер (s, z, h): {count}")
 
-if "python" in text:
-    print("слово python є в рядку")
-else:
-    print("слова python немає в рядку")
+# Завдання 3
+# Користувач вводить тест. Потрібно замінити всі пробіли
+# на дефіси. Виправіть помилку в коді
 
-count = 0
-for letter in text:
-    if letter in "szh":
-        count += 1
+# text = input("Введіть текст: ")
+#
+# result = text.replace(" ", "-")
+# print(f"Змінений текст: {result}")
 
-print(f"кількість шиплячих літер (s, z, h): {count}")
+# Завдання 4
+# Користувач вводить рядок та слово. Порахуйте скільки
+# разів це слово зустрічається у рядку.
+
+# text = input("введіть рядок: ")
+# word = input("введіть слово: ")
+#
+# count = text.count(word)
+# print(f"слово {word} зустрічається {count} разів")
+
+# Завдання 5
+# При оформлені посилки заборонено перевозити
+# наступні речі:
+# ● ножі
+# ● гроші
+# ● сильні отрути
+# Виправіть помилку в коді
+
+# items = input("Введіть ваші речі: ")
+# items = items.lower()
+#
+# if "ніж" in items or "гроші" in items or "отрута" in items:
+#     print("У вас є речі які заборонено перевозити")
+# else:
+#     print("Оформлено доставку")
+
+# Завдання 6
+# Користувач вводить текст. Порахуйте скільки в ньому
+# літер та цифр.
+
+text = input("введіть текст: ")
+letters = 0
+digits = 0
+
+for symbol in text:
+    if symbol.isalpha():
+        letters += 1
+    elif symbol.isdigit():
+        digits += 1
+
+print(f"Кількість літер: {letters}")
+print(f"Кількість цифр: {digits}")
