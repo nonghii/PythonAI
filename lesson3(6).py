@@ -5,17 +5,39 @@
 # ● Замініть усі числа більші 10 на 0 та виведіть
 # результат
 
-numbers = [1, 8, -5, 9]
+# numbers = [1, 8, -5, 9]
+#
+# print(numbers)
+#
+# for i in range(len(numbers)):
+#     numbers[i] = numbers[i] * 3
+#
+# print(numbers)
+#
+# for i in range(len(numbers)):
+#     if numbers[i] > 10:
+#         numbers[i] = 0
+#
+# print(numbers)
 
-print(numbers)
+# Завдання 2
+# Користувач вводить числа, поки не введе -1.
+# Збережіть усі ці числа в список. Виведіть їхню кількість,
+# суму, мінімальне, максимальне та середнє.
+# Скористайтесь функціями min, max, sum, len
 
-for i in range(len(numbers)):
-    numbers[i] = numbers[i] * 3
+numbers = []
 
-print(numbers)
+while True:
+    number = int(input("Введіть число (поки не введете -1: "))
 
-for i in range(len(numbers)):
-    if numbers[i] > 10:
-        numbers[i] = 0
+    if number == -1:
+        break
 
-print(numbers)
+    numbers.append(number)
+
+print("Кількість:", len(numbers))
+print("Сума:", sum(numbers))
+print("Мінімальне:", min(numbers))
+print("Максимальне:", max(numbers))
+print("Середнє:", sum(numbers) / len(numbers))
