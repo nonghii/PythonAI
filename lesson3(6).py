@@ -26,18 +26,61 @@
 # суму, мінімальне, максимальне та середнє.
 # Скористайтесь функціями min, max, sum, len
 
-numbers = []
+# numbers = []
+#
+# while True:
+#     number = int(input("Введіть число (поки не введете -1: "))
+#
+#     if number == -1:
+#         break
+#
+#     numbers.append(number)
+#
+# print("Кількість:", len(numbers))
+# print("Сума:", sum(numbers))
+# print("Мінімальне:", min(numbers))
+# print("Максимальне:", max(numbers))
+# print("Середнє:", sum(numbers) / len(numbers))
 
+# Завдання 3
+# Користувач вводить числа, поки не введе 0. Створіть
+# два нових списки: з додатніми та від’ємними числами.
+# Виведіть елементи обох списків на екран.
+# Виправіть помилку в коді
+
+# positive = []
+# negative = []
+# while True:
+#     number = int(input("Введіть число (0 для завершення): "))
+#
+#     if number == 0:
+#         break
+#
+#     if number > 0:
+#         positive.append(number)
+#     else:
+#         negative.append(number)
+#
+# print("Додатні числа:", positive)
+# print("Від'ємні числа:", negative)
+
+# Завдання 4
+# Користувач вводить зарплати співробітників, поки не
+# введе -1. Після чого вводить відсоток на який треба
+# збільшити усім зарплату.
+# Виведіть нові зарплати
+
+salaries = []
 while True:
-    number = int(input("Введіть число (поки не введете -1: "))
+    salary = int(input("Введіть зарплату (-1 для завершення): "))
 
-    if number == -1:
+    if salary == -1:
         break
 
-    numbers.append(number)
+    salaries.append(salary)
 
-print("Кількість:", len(numbers))
-print("Сума:", sum(numbers))
-print("Мінімальне:", min(numbers))
-print("Максимальне:", max(numbers))
-print("Середнє:", sum(numbers) / len(numbers))
+percent = int(input("Введіть відсоток збільшення: "))
+
+for i in range(len(salaries)):
+    salaries[i] = salaries[i] + salaries[i] * percent / 100
+print("Нові зарплати:", salaries)
