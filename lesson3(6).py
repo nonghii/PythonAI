@@ -70,17 +70,17 @@
 # збільшити усім зарплату.
 # Виведіть нові зарплати
 
-salaries = []
-while True:
-    salary = int(input("Введіть зарплату (-1 для завершення): "))
-
-    if salary == -1:
-        break
-
-    salaries.append(salary)
-
-percent = int(input("Введіть відсоток збільшення: "))
-
-for i in range(len(salaries)):
-    salaries[i] = salaries[i] + salaries[i] * percent / 100
-print("Нові зарплати:", salaries)
+# salaries = []
+# while True:
+#     salary = int(input("Введіть зарплату (-1 для завершення): "))
+#
+#     if salary == -1:
+#         break
+#
+#     salaries.append(salary)
+#
+# percent = int(input("Введіть відсоток збільшення: "))
+#
+# for i in range(len(salaries)):
+#     salaries[i] = salaries[i] + salaries[i] * percent / 100
+# print("Нові зарплати:", salaries)
